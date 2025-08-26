@@ -26,13 +26,13 @@ npm run cypress:open
 ```
 
 > **Base URL**  
-By default we use `https://reqres.in/api`. You can override it via env:
+By default we use `https://reqres.in/api`.
 ```bash
 API_BASE_URL=https://your-api.example.com npm test
 ```
-Or create a `.env` file with:
+Or use it from `.env` file with:
 ```
-API_BASE_URL=https://your-api.example.com
+API_BASE_URL=https://reqres.in/api
 ```
 
 ## Project structure

@@ -7,9 +7,7 @@
     "cypress:open": "cypress open",
     "test": "node ./scripts/pretest.js && cypress run",
     "test:headed": "node ./scripts/pretest.js && cypress run --headed",
-    "report:merge": "mochawesome-merge ./test-results/mochawesome/*.json > ./test-results/mochawesome/merged.json",
-    "report:html": "marge ./test-results/mochawesome/merged.json -f report -o ./test-results/mochawesome",
-    "report": "npm run report:merge && npm run report:html",
+    "report": "node ./scripts/generate-report.js",
     "ci": "node ./scripts/pretest.js && cypress run --reporter cypress-mochawesome-reporter && npm run report"
   },
   "devDependencies": {
